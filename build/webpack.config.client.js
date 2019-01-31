@@ -35,8 +35,14 @@ if (isDev) {
         {
           test: /\.styl/,
           use: [
-            'vue-style-loader',
+            'vue-style-loader', 
             'css-loader',
+            // {
+            //   loader: 'css-loader',
+            //   options: {
+            //     module: true
+            //   }
+            // },
             {
               loader: 'postcss-loader',
               options: {
