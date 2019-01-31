@@ -11,7 +11,9 @@ const defaultPlugins = [
       NODE_ENV: '"development"'
     }
   }),
-  new HTMLPlugin()
+  new HTMLPlugin({
+    template: path.join(__dirname, 'template.html')
+  })
 ]
 const devServer = {
   port: 8080,

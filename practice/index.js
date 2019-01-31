@@ -1,9 +1,6 @@
 import Vue from 'vue'
 
-let div = document.createElement('div')
-document.body.appendChild(div)
-
 new Vue({
-  el: div,
+  el: '#root',
   template: '<div>this is content</div>'
 })
